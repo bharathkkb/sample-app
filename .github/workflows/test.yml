@@ -11,10 +11,10 @@ jobs:
       - name: Step1
         run: |-
           echo "one"
-          exit 1
       - name: Step2
         run: |-
           echo "two"
+          exit 1
       - name: Failed?
         if: ${{ failure() }}
         run: |-
