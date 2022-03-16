@@ -24,11 +24,10 @@ jobs:
         uses: actions/github-script@9ac08808f993958e9de277fe43a64532a609130e
         with:
           script: |-
-            # https://docs.github.com/en/rest/reference/issues#create-an-issue--code-samples
               github.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title: 'foo',
-                body: 'bar',
-                assignee: 'bharathkkb'
-            })
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: 'foo',
+                  body: 'bar',
+                  assignee: 'bharathkkb'
+                })
