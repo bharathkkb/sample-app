@@ -25,10 +25,10 @@ jobs:
         with:
           script: |-
             # https://docs.github.com/en/rest/reference/issues#create-an-issue--code-samples
-            const create = await github.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: 'foo',
-              body: 'bar',
-              assignee: 'bharathkkb'
+              github.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: 'foo',
+                body: 'bar',
+                assignee: 'bharathkkb'
             })
