@@ -28,6 +28,6 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   title: 'build-push-dev-tools job failed',
-                  body: 'Log: https://github.com/${{ github.repository_owner }}/actions/runs/${{ github.run_id }}',
+                  body: 'Log: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}',
                   assignee: 'bharathkkb'
                 })
