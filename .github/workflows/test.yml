@@ -1,0 +1,15 @@
+name: Build and push new dev tools image
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  build-push-dev-tools:
+    steps:
+      - uses: actions/checkout@v2
+      - name: Step1
+        run: |-
+          echo "one"
+      - name: Step2
+        run: |-
+          echo "two"
