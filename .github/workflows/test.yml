@@ -2,7 +2,7 @@ name: Build and push new dev tools image
 on:
   push:
     branches:
-      - "master"
+      - "main"
 jobs:
   build-push-dev-tools:
     steps:
