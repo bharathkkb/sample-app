@@ -14,3 +14,7 @@ jobs:
       - name: Step2
         run: |-
           echo "two"
+      - name: Failed?
+        if: ${{ failure() }}
+        run: |-
+          echo "failed :("
