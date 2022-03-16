@@ -27,7 +27,7 @@ jobs:
               github.rest.issues.create({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  title: 'foo',
-                  body: 'bar',
+                  title: 'build-push-dev-tools job failed',
+                  body: 'Log: https://github.com/${{ github.repository_owner }}/actions/runs/${{ github.run_id }}',
                   assignee: 'bharathkkb'
                 })
