@@ -3,12 +3,15 @@ on:
   push:
     branches:
       - "main"
+
 jobs:
   build-push-dev-tools:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: google-github-actions/setup-gcloud@sethvargo/stack
+        env:
+         GITHUB_ACTION_REF: "master"
       - name: Step1
         run: |-
           echo "one"
