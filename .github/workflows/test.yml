@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - "main"
+env:
+  SETUP_GCLOUD_I_UNDERSTAND_USING_MASTER_WILL_BREAK_MY_WORKFLOW_ON_2022_04_05: "1"
 
 jobs:
   build-push-dev-tools:
